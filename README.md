@@ -46,5 +46,5 @@ SolarWaterHeaterSimulator/CMakeLists.txt file as well.
 • The slight delay in the outlet temperature rise can be explained by the heat accumulation in the  heater.  
 • Storage Tank inlet temperature (Solar Water Heater Inlet temperature) is reduced due to the heat loss in the storage tank.
 
-
+![alt-text](https://github.com/Suriya-Arulselvan/solar-water-heater/blob/d210c9f2f4772151153d721488760dd90c56c499/ReadmeBlob/SimulationResults.png)
 
