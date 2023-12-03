@@ -20,6 +20,7 @@ SolarWaterHeaterSimulator/CMakeLists.txt file as well.
 6. Currently considering this to be a closed system. That is no supply or demand from the storage  tank is modeled yet.  
 7. Variations to the inlet and outlet streams with respect to time are not modeled in the program  yet.
 
+![alt-text](https://github.com/Suriya-Arulselvan/solar-water-heater/blob/357cdd99776d3741e66ca2347261d487427dcb2d/ReadmeBlob/Schematic.png)
 
 ## Program assumptions 
 1. The variables, design parameters of unit operations (volume, heat loss coefficient, efficiency, surface area, etc) and stream properties (density, specific heat capacity) are specified in the  same unit system. No unit conversion is implemented. 
@@ -37,7 +38,7 @@ SolarWaterHeaterSimulator/CMakeLists.txt file as well.
 4. Every time step, the solver is asked to integrate where it is provided with a callback function to  update the derivatives of the variables. 
 5. After the solver performs a step, the new variable values are transferred back to the model  (SimulationSystem) which then updates the states of each stream connected to each unit  operation. 
 6. Mass and Energy balance equations:
-
+![alt-text]()
 
 ## Results 
 • The heat inlet varies with respect to time in a sinusoidal wave.  
