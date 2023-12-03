@@ -1,5 +1,10 @@
 # solar-water-heater
 
+## Objective
+Build an application that simulates the heat transfer from solar panel to a storage tank.
+
+![alt-text](https://github.com/Suriya-Arulselvan/solar-water-heater/blob/357cdd99776d3741e66ca2347261d487427dcb2d/ReadmeBlob/Schematic.png)
+
 ## Building the program 
 1. Extract the contents of SolarWaterHeaterSimulator.zip file 
 2. Install boost library from the following link. Extract the .7z or .zip file in the same level as the Scalar directory https://www.boost.org/users/history/version_1_82_0.html 
@@ -19,8 +24,6 @@ SolarWaterHeaterSimulator/CMakeLists.txt file as well.
 5. Heat transfer due to friction in the pump is considered negligible. 
 6. Currently considering this to be a closed system. That is no supply or demand from the storage  tank is modeled yet.  
 7. Variations to the inlet and outlet streams with respect to time are not modeled in the program  yet.
-
-![alt-text](https://github.com/Suriya-Arulselvan/solar-water-heater/blob/357cdd99776d3741e66ca2347261d487427dcb2d/ReadmeBlob/Schematic.png)
 
 ## Program assumptions 
 1. The variables, design parameters of unit operations (volume, heat loss coefficient, efficiency, surface area, etc) and stream properties (density, specific heat capacity) are specified in the  same unit system. No unit conversion is implemented. 
