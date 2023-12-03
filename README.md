@@ -38,7 +38,7 @@ SolarWaterHeaterSimulator/CMakeLists.txt file as well.
 4. Every time step, the solver is asked to integrate where it is provided with a callback function to  update the derivatives of the variables. 
 5. After the solver performs a step, the new variable values are transferred back to the model  (SimulationSystem) which then updates the states of each stream connected to each unit  operation. 
 6. Mass and Energy balance equations:
-![alt-text]()
+![alt-text](https://github.com/Suriya-Arulselvan/solar-water-heater/blob/ae5382b13a277345b4353047de8951ce2f2d4d4c/ReadmeBlob/MassEnergyBalanceEquations.png)
 
 ## Results 
 • The heat inlet varies with respect to time in a sinusoidal wave.  
@@ -47,4 +47,10 @@ SolarWaterHeaterSimulator/CMakeLists.txt file as well.
 • Storage Tank inlet temperature (Solar Water Heater Inlet temperature) is reduced due to the heat loss in the storage tank.
 
 ![alt-text](https://github.com/Suriya-Arulselvan/solar-water-heater/blob/d210c9f2f4772151153d721488760dd90c56c499/ReadmeBlob/SimulationResults.png)
+
+## Future improvements 
+1. Add supply and demand flow streams to and from the storage tank. The first pass of this  implementation will assume that the level of the tank is maintained. That is, demand flow will  be considered to be replenished by supply instantaneously. 
+2. Make EnergyStream and MassStream classes take ownership of their variations with respect to  time. The variation with respect to time can be captured by data or by a mathematical formula.  Every time step, the derivative / value of the heat flow and mass flow should be captured by  function defined in EnergyStream and MassStream classes.  
+3. A cleaner way to input design parameters, operation conditions can be implemented. 
+4. Apply more realistic design parameter values and data to the program.
 
